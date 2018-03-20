@@ -15,4 +15,35 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, " ActivityCh5_2_3 : onCreate "); // 使用 Log.d()方法輸出呼叫此方法的訊息文字
     }
 
+    //Log.d的d即為Debug App
+    //其他6個覆寫方法
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(TAG, " ActivityCh5_2_3 : onStart ");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(TAG, " ActivityCh5_2_3 : onResume ");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG, " ActivityCh5_2_3 : onPause ");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(TAG, " ActivityCh5_2_3 : onStop ");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, " ActivityCh5_2_3 : onDestroy ");
+    }
 }
